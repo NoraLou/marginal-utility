@@ -29,6 +29,7 @@ class App extends Component {
               ...snapShot.data()
             }
           });
+          console.log('this.state :', this.state);
         });
       }
       // set current user to a null response if no user logged in - default return from FB
