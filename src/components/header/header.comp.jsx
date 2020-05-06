@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../../assets/crown.svg';
 import { Link } from'react-router-dom';
 import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.comp.jsx';
-
+import CartDropdown from '../cart-dropdown/cart-dropdown.comp';
 import './header.styles.scss';
 
 const Header = ({ currentUser }) => {
@@ -28,6 +28,7 @@ const Header = ({ currentUser }) => {
         }
         <CartIcon />
       </div>
+      <CartDropdown />
     </div>
   );
 }
