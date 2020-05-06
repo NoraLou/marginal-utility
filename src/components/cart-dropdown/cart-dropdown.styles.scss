@@ -10,11 +10,6 @@
   top: 90px;
   right: 40px;
   z-index: 5;
-  transition: visibility .25s ease;
-
-  &.hidden {
-    visibility: hidden;
-  }
 
   .cart-items {
     height: 240px;
