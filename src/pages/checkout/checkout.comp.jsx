@@ -1,16 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './checkout.styles.scss';
 
-
-class Checkout extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {  }
-  }
-  render() {
-    return (
-      <h1>CHECKOUT PAGE</h1>
-     );
-  }
+const CheckoutPage = () => {
+  return (
+    <div className='checkout-page'>
+      <div className='checkout-header'>
+        <div className='header-block'>
+          <span>Product</span>
+        </div>
+        <div className='header-block'>
+          <span>Product</span>
+        </div>
+        <div className='header-block'>
+          <span>Product</span>
+        </div>
+        <div className='header-block'>
+          <span>Product</span>
+        </div>
+        <div className='header-block'>
+          <span>Product</span>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Checkout;
+export default CheckoutPage
