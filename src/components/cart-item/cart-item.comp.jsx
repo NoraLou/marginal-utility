@@ -1,6 +1,3 @@
-//make component
-//connect with redux - use make state to props to connect the data
-
 import React from 'react';
 import './cart-item.styles.scss';
 
