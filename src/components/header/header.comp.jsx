@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
-import { Link } from'react-router-dom';
 import { createStructuredSelector } from 'reselect';
 
 import { auth } from '../../firebase/firebase.utils';
@@ -9,7 +8,7 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import CartIcon from '../cart-icon/cart-icon.comp.jsx';
 import CartDropdown from '../cart-dropdown/cart-dropdown.comp';
-import  { HeaderContainer, LogoContainer, OptionsContainer, OptionDiv, OptionLink } from './header.styles.jsx'
+import  { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.styles.jsx'
 import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => {
@@ -27,7 +26,7 @@ const Header = ({ currentUser, hidden }) => {
         </OptionLink>
         {
           currentUser ?
-          <OptionDiv onClick={()=> auth.signOut()}>SIGN OUT</OptionDiv>
+          <OptionLink as='div' onClick={()=> auth.signOut()}>SIGN OUT</OptionLink>
           :
           <OptionLink to='/sign-in'>SIGN IN</OptionLink>
         }
