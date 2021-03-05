@@ -20,7 +20,7 @@ const INITIAL_STATE = {
     },
     {
       title: 'womens',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+      imageUrl: 'https://picsum.photos/seed/picsum/200/300',
       size: 'large',
       id: 4,
       linkUrl: 'womens'

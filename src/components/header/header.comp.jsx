@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { ReactComponent as Logo } from '../../assets/crown.svg';
+import { ReactComponent as Logo } from '../../assets/interface.svg';
 import { createStructuredSelector } from 'reselect';
 
 import { auth } from '../../firebase/firebase.utils';
@@ -9,7 +9,6 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import CartIcon from '../cart-icon/cart-icon.comp.jsx';
 import CartDropdown from '../cart-dropdown/cart-dropdown.comp';
 import  { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from './header.styles.jsx'
-import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => {
   return (
