@@ -6,7 +6,8 @@ import './homepage.styles.scss';
 const HomePage = ({history}) => {
   return (
     <div className="homepage">
-      <Directory />
+      Homepage
+      {/* <Directory /> */}
     </div>
   )
 }

@@ -41,23 +41,25 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
-        <Switch>
-          <Route exact path='/' render={routeProps => <HomePage {...routeProps}/>}/>
-          <Route path='/shop' render={routeProps => <ShopPage {...routeProps}/>}/>
-          <Route exact path='/checkout' render={routeProps => <Checkout {...routeProps}/>}/>
-          <Route
-            exact
-            path='/sign-in'
-            render={ routeProps =>
-              this.props.currentUser ? (
-                <Redirect to='/'/>
-              ) : (
-                <LogInRegister {...routeProps}/>
-              )
-            }/>
-        </Switch>
+        <div className="App container">
+          <Switch>
+            <Route exact path='/' render={routeProps => <HomePage {...routeProps}/>}/>
+            <Route path='/shop' render={routeProps => <ShopPage {...routeProps}/>}/>
+            <Route exact path='/checkout' render={routeProps => <Checkout {...routeProps}/>}/>
+            <Route
+              exact
+              path='/sign-in'
+              render={ routeProps =>
+                this.props.currentUser ? (
+                  <Redirect to='/'/>
+                ) : (
+                  <LogInRegister {...routeProps}/>
+                )
+              }/>
+          </Switch>
+        </div>
       </div>
     );
   }
