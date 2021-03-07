@@ -9,11 +9,18 @@ const INITIAL_STATE = {
     },
     {
       title: 'mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
       size: 'large',
       id: 5,
       linkUrl: 'mens'
-    }
+    },
+    {
+      title: 'unisex',
+      imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+      size: 'large',
+      id: 3,
+      linkUrl: 'unisex'
+    },
   ]
 };
 
