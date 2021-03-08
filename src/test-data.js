@@ -115,8 +115,8 @@ const SHOP_DATA = {
           items: [
             {
               id: 14,
-              name: 'Blue Tanktop',
-              imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
+              name: 'Jean Jacket',
+              imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
               price: 25
             },
             {
