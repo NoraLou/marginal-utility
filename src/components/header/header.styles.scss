@@ -26,7 +26,17 @@
       align-items: center;
       .option {
         padding: 0 20px;
+        &.auth-out {
+          background:black;
+          color: white;
+          height:70px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-weight: bolder;
+        }
       }
+
     }
   }
 }

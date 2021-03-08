@@ -1,7 +1,20 @@
 .log-in-register {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 30px auto;
-  padding: 0 3%;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+
+  .sign-in,.sign-up {
+    flex: 100% 1 1;
+    margin: 30px;
+    @media (min-width: 768px) {
+      flex: 40% 1 1;
+    }
+  }
+
 }
